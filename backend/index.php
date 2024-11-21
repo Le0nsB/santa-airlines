@@ -15,6 +15,7 @@ var_dump($manaLidosta);
 
 $departureTime = new DateTime('2024-12-01 14:00:00', new DateTimeZone('Europe/Riga'));
 
-$flight = new Flight("SA503", "Riga International Airport", "London Heathrow", $departureTime, $manaLidmasina);
 
+$flight = new Flight("SA503", "Riga International Airport", "London Heathrow", $departureTime, $manaLidmasina);
+echo "<br><br>";
 echo $flight->getFlightInfo();
